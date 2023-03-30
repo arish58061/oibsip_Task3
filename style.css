@@ -1,0 +1,137 @@
+   *{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+body{
+    background: url(bg.jpg);
+    background-repeat: repeat;
+background-size: 1400px;
+/* color: white; */
+}
+.container{
+    /* border: 1px solid black; */
+    display: inline-block;
+width: 60%;
+margin:auto;
+/* color: black; */
+}
+ #list{
+    width: 50px;
+    margin: auto;
+}
+.nav{
+    display: inline-block;
+    /* display: flex; */
+    /* justify-content: space-between; */
+flex-wrap: wrap;
+width: 50%;
+margin: 25px 40px;
+}
+.nav div{
+    display: inline-block;
+}
+.nav h2{
+    font-size: 3.1rem;
+    color: #0a0a4a
+    /* margin: 10px; */
+    /* padding: 10px 20px; */
+} 
+.user-input{
+    /* border: 1px solid black; */
+    margin: 73px 26px;
+    /* padding: 10px 30px; 
+    */
+    width: 486px;
+    text-align: center;
+}
+.user-input input{
+    /* margin: 4% 50px; */
+    height: 100%;
+    width: 80%;
+    outline: none;
+padding: 80px;
+border: 1px solid#0a0a4a;
+border-radius: 5px;
+/* border-top-left-radius: 5px; */
+/* border-bottom-left-radius: 5px; */
+background-color: #0a0a4a;
+color: white;
+}
+.user-input button{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px;
+    width: 113%;
+    transition: 1s;
+    outline: none;
+    background-color: #039dfc;
+    border: 1px solid #039dfc;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.user-input button:hover{
+    background-color: transparent;
+    color: white;
+}
+.to-do-items{
+ /* border: 3px solid #0a0a4a; */
+ /* border-radius: 10px; */
+    display: inline-block;
+    position: absolute;
+    left: 56%;
+    width: 35%;
+    margin: 10% 16px;
+    /* border: 2px solid white; */
+    /* border-radius: 10px; */
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color:#0a0a4a;
+    height: auto;
+    border: 2px solid #0a0a4a;
+     border-radius: 10px;
+     padding: 15px;
+     color:white;
+     margin-top: 10px;
+     font-size: 1.3rem;
+     text-transform:uppercase;
+}
+.item:hover{
+    box-shadow: 0 0 20px #e33865;
+    border: 1px solid #e33865;
+}
+.item i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+@media(max-width:758px){
+    .nav{
+        align-items: center;
+        flex-direction: column;
+    }
+.nav h2{
+    margin: 10px 0;
+}
+
+.user-input{
+    width: 100%;
+}
+.to-do-items{
+    width: 50%;
+
+}
+}
+@media(max-width:480px){
+    .user-input input{
+        width:74%
+    }
+}
+@media(max-width:320px){
+    .user-input input{
+        width:60%
+    }
+}
