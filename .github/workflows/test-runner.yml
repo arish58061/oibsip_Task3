@@ -1,0 +1,21 @@
+name: Test Self-Hosted Runner
+
+on:
+  push:
+    branches:
+      - master  # Runs on every push to 'main' branch
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  test-runner:
+    runs-on: self-hosted  # Uses your self-hosted runner
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Print Runner Info
+        run: |
+          echo "Running on self-hosted runner"
+          uname -a  # Shows OS details
+          whoami   # Shows current user
+          echo "GitHub Actions Runner is working!"
